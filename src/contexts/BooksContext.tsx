@@ -36,7 +36,7 @@ const initialBooks: Book[] = [
   {
     id: '1',
     title: 'The Great Gatsby',
-    author: 'Faiz Ahmed Faiz',
+    author: 'Mohammad Ali',
     year: '1925',
     coverUrl: 'https://m.media-amazon.com/images/I/71FTb9X6wsL._AC_UF1000,1000_QL80_.jpg',
     genre: 'Classic',
@@ -44,64 +44,92 @@ const initialBooks: Book[] = [
     reviews: [
       {
         id: '101',
-        userName: 'Ali Khan',
+        userName: 'Ayesha Khan',
         rating: 5,
-        comment: 'Timeless',
+        comment: 'A timeless classic. Highly recommended for all literature lovers!',
         date: '2023-04-15'
+      },
+      {
+        id: '102',
+        userName: 'Sana Mirza',
+        rating: 4,
+        comment: 'A beautifully written story with a tragic ending.',
+        date: '2023-04-20'
       }
     ]
   },
   {
     id: '2',
     title: 'To Kill a Mockingbird',
-    author: 'Nasim Hijazi',
+    author: 'Ahmed Raza',
     year: '1960',
     coverUrl: 'https://m.media-amazon.com/images/I/81aY1lxk+9L._AC_UF1000,1000_QL80_.jpg',
     genre: 'Classic',
     description: 'The story of a young girl confronting racial injustice in a small Southern town during the Great Depression as she observes her father, a lawyer, defend a Black man falsely accused of raping a white woman.',
     reviews: [
       {
-        id: '102',
-        userName: 'Ayesha Tariq',
+        id: '103',
+        userName: 'Ali Hassan',
         rating: 5,
-        comment: 'Powerful',
+        comment: 'One of the most profound novels ever written.',
         date: '2023-05-20'
+      },
+      {
+        id: '104',
+        userName: 'Zara Siddiqui',
+        rating: 4,
+        comment: 'A strong narrative on justice and morality. The themes are still relevant today.',
+        date: '2023-05-25'
       }
     ]
   },
   {
     id: '3',
     title: '1984',
-    author: 'Ahmed Raza',
+    author: 'Farhan Khan',
     year: '1949',
     coverUrl: 'https://m.media-amazon.com/images/I/91SZSW8qSsL._AC_UF1000,1000_QL80_.jpg',
     genre: 'Dystopian',
     description: 'A dystopian novel set in a totalitarian society where independent thinking is persecuted and there is constant surveillance of citizens.',
     reviews: [
       {
-        id: '103',
-        userName: 'Sana Malik',
-        rating: 4,
-        comment: 'Prescient',
+        id: '105',
+        userName: 'Umer Shah',
+        rating: 5,
+        comment: 'A chilling prediction of our future. Thought-provoking!',
         date: '2023-03-10'
+      },
+      {
+        id: '106',
+        userName: 'Nida Imran',
+        rating: 4,
+        comment: 'A disturbing look at surveillance and freedom. Worth reading.',
+        date: '2023-03-12'
       }
     ]
   },
   {
     id: '4',
     title: 'The Hobbit',
-    author: 'Jamil Ahmed',
+    author: 'Bilal Ahmed',
     year: '1937',
     coverUrl: 'https://m.media-amazon.com/images/I/710+HcoP38L._AC_UF1000,1000_QL80_.jpg',
     genre: 'Fantasy',
     description: 'Bilbo Baggins, a comfort-loving hobbit, is whisked away on an unexpected journey by Gandalf the Grey and a company of dwarves seeking to reclaim their ancestral home from the dragon Smaug.',
     reviews: [
       {
-        id: '104',
-        userName: 'Bilal Ahmed',
+        id: '107',
+        userName: 'Omar Ali',
         rating: 5,
-        comment: 'Amazing world-building',
+        comment: 'A magical adventure. A must-read for fantasy lovers.',
         date: '2023-01-05'
+      },
+      {
+        id: '108',
+        userName: 'Hassan Malik',
+        rating: 4,
+        comment: 'Tolkien’s world-building is unparalleled. A delightful story.',
+        date: '2023-01-10'
       }
     ]
   },
@@ -115,11 +143,18 @@ const initialBooks: Book[] = [
     description: 'The leading textbook in Artificial Intelligence, used in over 1500 universities. It provides a comprehensive overview of the field, from machine learning to robotics, computer vision, and beyond.',
     reviews: [
       {
-        id: '105',
-        userName: 'Farah Khan',
+        id: '109',
+        userName: 'Fatima Ali',
         rating: 5,
-        comment: 'Comprehensive',
+        comment: 'Comprehensive, well-organized, and accessible. The best AI textbook.',
         date: '2023-06-12'
+      },
+      {
+        id: '110',
+        userName: 'Raza Khan',
+        rating: 4,
+        comment: 'An essential read for anyone entering the AI field. Very detailed.',
+        date: '2023-06-15'
       }
     ]
   },
@@ -133,50 +168,21 @@ const initialBooks: Book[] = [
     description: 'The first comprehensive textbook on deep learning, written by leading experts in the field. It covers mathematical and conceptual background, deep learning techniques, and research perspectives.',
     reviews: [
       {
-        id: '106',
-        userName: 'Usman Ali',
+        id: '111',
+        userName: 'Umar Farooq',
         rating: 5,
-        comment: 'Must-read',
+        comment: 'An excellent resource for deep learning enthusiasts. Must-have for the library.',
         date: '2023-07-18'
-      }
-    ]
-  },
-  {
-    id: '7',
-    title: 'The Age of AI: And Our Human Future',
-    author: 'Henry Kissinger, Eric Schmidt, Daniel Huttenlocher',
-    year: '2021',
-    coverUrl: 'https://m.media-amazon.com/images/I/71zRkpn+MYL._SY160.jpg',
-    genre: 'Computer Science',
-    description: 'An essential roadmap to our present and our future, The Age of AI explores how AI is challenging the very essence of what it means to be human, transforming our societies, our politics, and our economies.',
-    reviews: [
+      },
       {
-        id: '107',
-        userName: 'Zara Siddiqui',
-        rating: 4,
-        comment: 'Thoughtful',
-        date: '2023-09-02'
-      }
-    ]
-  },
-  {
-    id: '8',
-    title: 'Human Compatible: Artificial Intelligence and the Problem of Control',
-    author: 'Stuart Russell',
-    year: '2019',
-    coverUrl: 'https://m.media-amazon.com/images/I/71cSl7jGZ9L._SY160.jpg',
-    genre: 'Computer Science',
-    description: 'In the popular imagination, AI systems are racing toward superintelligence, humans will be overtaken, and a sci-fi dystopia will follow. Russell argues that this scenario can be avoided and outlines a path to a more harmonious future.',
-    reviews: [
-      {
-        id: '108',
-        userName: 'Hassan Qureshi',
+        id: '112',
+        userName: 'Sara Javed',
         rating: 5,
-        comment: 'Profound',
-        date: '2023-05-14'
+        comment: 'Perfect balance of theory and practical application. Great for both beginners and experts.',
+        date: '2023-07-22'
       }
     ]
-  }
+  },
 ];
 
 const BooksContext = createContext<BooksContextType | undefined>(undefined);
@@ -192,7 +198,7 @@ export function BooksProvider({ children }: { children: ReactNode }) {
     const timer = setTimeout(() => {
       setIsLoading(false);
     }, 1000);
-
+    
     return () => clearTimeout(timer);
   }, []);
 
@@ -202,7 +208,7 @@ export function BooksProvider({ children }: { children: ReactNode }) {
       id: Date.now().toString(),
       reviews: []
     };
-
+    
     setBooks([...books, newBook]);
     toast({
       title: "Book added",
@@ -216,13 +222,13 @@ export function BooksProvider({ children }: { children: ReactNode }) {
       id: Date.now().toString(),
       date: new Date().toISOString().split('T')[0]
     };
-
-    setBooks(books.map(book =>
+    
+    setBooks(books.map(book => 
       book.id === bookId
         ? { ...book, reviews: [...book.reviews, newReview] }
         : book
     ));
-
+    
     toast({
       title: "Review added",
       description: "Your review has been published. Thank you for your feedback!",
@@ -247,10 +253,10 @@ export function BooksProvider({ children }: { children: ReactNode }) {
 
   const searchBooks = (query: string) => {
     if (!query.trim()) return books;
-
+    
     const searchTerm = query.toLowerCase().trim();
-    return books.filter(book =>
-      book.title.toLowerCase().includes(searchTerm) ||
+    return books.filter(book => 
+      book.title.toLowerCase().includes(searchTerm) || 
       book.author.toLowerCase().includes(searchTerm) ||
       book.genre.toLowerCase().includes(searchTerm)
     );
@@ -259,7 +265,7 @@ export function BooksProvider({ children }: { children: ReactNode }) {
   const getBookById = (id: string) => books.find(book => book.id === id);
 
   return (
-    <BooksContext.Provider value={{
+    <BooksContext.Provider value={{ 
       books,
       favoriteBookIds,
       isLoading,
